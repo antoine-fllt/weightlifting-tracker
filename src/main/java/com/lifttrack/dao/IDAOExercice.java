@@ -8,5 +8,4 @@ import java.util.List;
 @Repository
 public interface IDAOExercice extends JpaRepository<Exercise, Long> {
     List<Exercise> findAllByOrderByNameAsc();
-    List<Exercise> findByCategory(String category);
 }

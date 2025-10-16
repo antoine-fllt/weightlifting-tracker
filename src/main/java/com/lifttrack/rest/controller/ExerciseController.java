@@ -25,9 +25,4 @@ public class ExerciseController {
             .map(ResponseEntity::ok)
             .orElse(ResponseEntity.notFound().build());
     }
-    
-    @GetMapping("/category/{category}")
-    public ResponseEntity<List<Exercise>> getByCategory(@PathVariable String category) {
-        return ResponseEntity.ok(daoExercice.findByCategory(category));
-    }
 }

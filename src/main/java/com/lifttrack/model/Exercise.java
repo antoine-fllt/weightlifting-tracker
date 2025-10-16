@@ -24,9 +24,6 @@ public class Exercise {
     @Column(columnDefinition = "TEXT")
     private String description;
     
-    @Column(length = 50)
-    private String category;
-    
     @Column(name = "created_at")
     private LocalDateTime createdAt;
     
